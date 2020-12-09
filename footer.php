@@ -47,6 +47,6 @@
     </div>
     <p class="copyright">Copyright © 2020 AlizaFaisal</p>
 </footer>
-
+<script src="css/script.js"></script>
 </body>
 </html>

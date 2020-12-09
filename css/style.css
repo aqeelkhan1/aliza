@@ -15,8 +15,9 @@ a{
 	height: 500px;
     top: 0;
     left: 0;
-    margin-top: -26vh;
-
+}
+.logo img{
+    width: 10vw;
 }
 .banner{
    
@@ -41,6 +42,12 @@ a{
     z-index: 1;
     display: flex;
     width: 100%;
+    background: rgba(0,0,0,.2);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
 }
 .navbar .logo{
     flex-basis: 40%;
@@ -54,14 +61,12 @@ a{
 }
 .navbar nav ul li{
     width: 20%;
-    list-style: none;
-    margin-top: 3vh;
-    
+    list-style: none;    
 }
 
 @keyframes con{
     0%{
-        transform: translateY(50%);
+        transform: translateY(40%);
     }
     100%{
         transform: translateY(0%);
@@ -137,6 +142,9 @@ margin-bottom: 2vh;
 .project-area .row .box{
     flex-basis: 50%;
     margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .project-area .row .box-4{
     margin-bottom: 10vh;
@@ -153,8 +161,7 @@ margin-bottom: 2vh;
     font-family: Gilroy,-apple-system,BlinkMacSystemFont,Raleway,sans-serif;
 }
 .project-area .row .box img{
-    width: 82%;
-    height: 44vh;
+    width: 30vw;
 }
 
 .project-area .button{
@@ -169,6 +176,20 @@ margin-bottom: 2vh;
     background-color: black;
     color: white;
     transition: all 1s;
+}
+.box img{
+    transition: transform .5s;
+}
+.box{
+    position: relative;
+    overflow: hidden; 
+}
+.box a:nth-last-of-type(2){
+    height: 57vh;
+    overflow: hidden;
+}
+.box a:nth-last-of-type(2):hover img{
+    transform: scale(1.1);
 }
 /* end of project area on home page styling  */
 /* contact page styling */
@@ -377,9 +398,9 @@ footer ul li a{
     font-size: 1.18rem;
 }
 .footer-logo img{
-    width: 14vw;
+    width: 7vw;
     margin-top: 4vh;
-   
+    margin-left: 5vw;
 }
 footer p.copyright{
     margin-top: 2vh;
@@ -390,6 +411,9 @@ footer p.copyright{
 .footer-info{
     text-align: center;
     width: 57%;
+}
+.footer-row ul{
+    line-height: .1;
 }
 /* end of footer styling */
 /* project details page styling */
@@ -513,7 +537,55 @@ section{
 }
 img, .section_text{
     flex-basis: 50%;
+    width: 30vw;
 }
+.myself h3{
+    width: 37vw;
+    float: right;
+    font-size: 2rem;
+    position: relative;
+    top: 2vh;
+}
+.myself h4{
+    float: right;
+    position: relative;
+    top: 14vh;
+    right: -14.5vw;
+    letter-spacing: 1vh;
+}
+.myself h5{
+    float: right;
+    position: relative;
+    font-size: 2rem;
+    bottom: 38vh;
+    left: 6vw;
+
+}
+.myservices{
+    float: right;
+    position: relative;
+    font-size: 2rem;
+    bottom: 38vh;
+    left: 6vw;
+}
+.myself p{
+    float: right;
+    width: 50vw;
+    position: relative;
+    bottom: 64vh;
+    right: 5vw;
+    padding-bottom: 3vh;
+    border-bottom: 1px solid black;
+}
+/* .myself p::after{
+    content: "";
+    position: absolute;
+    width: 50vw;
+    height: 2px;
+    background-color: black;
+    top: 20vh;
+    right: 0vw;
+} */
 .section_text{
     margin-top: 4vh;
     padding: 2%;
@@ -585,6 +657,10 @@ img, .section_text{
  .elementor .elementor_text{
     flex-basis: 50%;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.7;
 }
 .elementor img{
     flex-basis: 50%;
@@ -593,7 +669,6 @@ img, .section_text{
 .elementor h5{
     font-size: 2rem;
     line-height: 1.25;
-    margin-top: 20vh;
     padding-left: 6vw;
 }
 .elementor p{
@@ -614,10 +689,9 @@ img, .section_text{
 }
 .project-area .row .box {
     width: 100%;
+    line-height: 2;
 }
-.project-area .row .box p{
-    width: 100%;
-} 
+
 /* end of project details page styling */
 @media screen and (min-width:800px){
     .area1, .area2, .area3, .area4{

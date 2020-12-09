@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-   <div class="navbar">
+   <div class="navbar" id="navbar">
         <div class="logo">
             <a href="index.php"><img src="images/logo.png" alt="Aliza Faisal Logo"></a>
         </div>
